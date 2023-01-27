@@ -1,0 +1,305 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1200px;
+    /* padding: 0 15px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+     
+    height: 90vh;
+    
+}
+
+.cofe_interface {
+    max-width: 400px;
+}
+
+.ingridients_txt {
+    text-align: center;
+}
+
+
+.ingridients {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+    
+}
+
+.ingrd_img {
+    width: 120px;
+    height: 50px;
+}
+
+.ingrd_progress {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+#ingr_prog {
+    width: 120px;
+    height: 50px;
+    
+}
+
+.ingrd_btns {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ingrd_btn_active {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(64, 197, 246);
+    border: none;
+    cursor: pointer; 
+}
+
+.ingrd_btn {
+    width: 120px;
+    height: 30px;
+    border: none;
+    cursor: pointer; 
+}
+
+.btn_box {
+    display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.add_btn {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(64, 197, 246);
+    border: none;
+    cursor: pointer; 
+}
+.cofe_title {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cofe_type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cofe_img {
+    width: 120px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.cofe_interface_right {
+    max-width: 600px;
+    
+}
+.cofe_btn_block {
+  display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.prw_img {
+    width: 250px;
+    height: 400px;
+}
+
+:root {
+    --color-primary: #ff4b00;
+    --color-subtle: #b0b0b0;
+    --line-border-fill: rgb(64, 197, 246);
+    --line-border-empty: lightgrey;
+  }
+
+.control {
+    margin: 24px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  label:hover {
+    background-color: rgb(64, 197, 246);
+  }
+  
+  input[type=checkbox]   {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    height: 24px;
+    width: 24px;
+    background: #fff;
+    border: 2px solid var(--color-subtle);
+    margin: 0 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+        outline-offset: 5px;
+        outline-color: var(--color-subtle);
+  }
+  
+  input[type=checkbox]:after    {
+    content: "";
+    display: block;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+  }
+  input[type=checkbox]:checked:after   {
+    transform: scale(1);
+  }
+  
+  input[type=checkbox] {
+    border-radius: 5px;
+  }
+  input[type=checkbox]:after {
+    width: 16px;
+    height: 16px;
+  }
+  input[type=checkbox]:checked {
+    border: none;
+    background-color: var(--color-primary, #dfdfdf);
+  }
+  input[type=checkbox]:checked:after {
+    content: url("data:image/svg+xml, <svg viewBox='0 0 16 15' xmlns='http://www.w3.org/2000/svg'><path fill='white' d='M15.25.847a1.51 1.51 0 0 1 .405 2.096L8.106 14.11a1.944 1.944 0 0 1-2.94.329L.6 10.156a1.51 1.51 0 1 1 2.067-2.202l3.645 3.42 6.841-10.122a1.51 1.51 0 0 1 2.098-.405Z'/></svg>");
+  }
+
+  .counter {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+  }
+
+  span {
+    cursor:pointer;
+   }
+		.number{
+			/* margin:100px; */
+      display: flex;
+      padding: 8px;
+		}
+		.minus, .plus{
+			width:24px;
+			height:24px;
+			background:#f2f2f2;
+			border-radius:4px;
+			/* padding:8px 5px 8px 5px; */
+			border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle ;
+      text-align: center;
+		}
+		.inpt_counter {
+			height:24px;
+      width: 50px;
+      text-align: center;
+      font-size: 15px;
+			border:1px solid #ddd;
+			border-radius:4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .cofe_btn_box {
+      display: flex;
+      margin-top: 85px;
+      justify-content: center;
+      
+    }
+
+    .cofe_btn {
+      width: 200px;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+      background-color: rgb(64, 197, 246); 
+    }
+
+    .progress_body {
+      
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* overflow: hidden; */
+      margin-top: 20px;
+      
+    }
+    
+    .progress_box {
+      text-align: center;
+    }
+    
+    .progress-container {
+      display: flex;
+      justify-content: space-between;
+      
+      position: relative;
+      margin-bottom: 30px;
+      max-width: 100%;
+      width: 350px;
+    }
+    
+    .progress-container::before {
+      content: ''; /*your have to write this to be able to see it*/
+      background-color: rgb(64, 197, 246);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 100%; /*it represents the empty line*/
+      z-index: -1;
+    }
+    
+    .progress {
+      background-color: blue;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 0%;
+      z-index: -1;
+      transition: 0.4s ease;
+    }
+    
+    .circles {
+      background-color: white;
+      color: #999;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid lightgray;
+      transition: 0.4s ease;
+    }
+    
+    .circles.active {
+      border-color: blue;
+    }

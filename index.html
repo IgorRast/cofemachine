@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cofemachine</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="cofe_interface">
+                    <h1 class="ingridients_txt">
+                        Добавьте ингридиенты
+                    </h1>
+                    <div class="ingridients">
+                        <img class="ingrd_img" src="./images/coffee.jpg" alt="">
+                        <img class="ingrd_img" src="./images/c9515edd7bc28346659e36d148c1eb9c.jpg" alt="">
+                        <img class="ingrd_img" src="./images/dddb20cea383bbef1201c12e50bff211_ce_1277x799x0x0_cropped_666x444.jpg" alt="">
+                    </div>
+                    <div class="ingrd_progress">
+                        <progress id="ingr_prog" max="100" value="70"> 70% </progress>
+                        <progress id="ingr_prog" max="100" value="70"> 70% </progress>
+                        <progress id="ingr_prog" max="100" value="70"> 70% </progress>
+                    </div>
+                    <div class="ingrd_btns">
+                        <button class="ingrd_btn_active">Выбрать</button>
+                        <button class="ingrd_btn">Выбрать</button>
+                        <button class="ingrd_btn">Выбрать</button>
+                    </div>
+                    <div class="btn_box">
+                        <button class="add_btn">Добавить</button>
+                    </div>
+                    <div class="cofe_title">
+                        <h3 class="cofe">Мокка</h3>
+                        <h3 class="cofe">Американо</h3>
+                        <h3 class="cofe">Латте</h3>
+                    </div>
+                    <div class="cofe_type">
+                        <img class="cofe_img" src="./images/mokko.jpg" alt="">
+                        <img class="cofe_img" src="./images/americano.jpeg" alt="">
+                        <img class="cofe_img" src="./images/Latte Macchiato.jpg" alt="">
+                    </div>
+                    <div class="ingrd_btns">
+                        <button class="ingrd_btn_active">Выбрать</button>
+                        <button class="ingrd_btn">Выбрать</button>
+                        <button class="ingrd_btn">Выбрать</button>
+                    </div>
+                   
+                </div>
+                <div class="cofe_interface_right">
+                    <div class="cofe_btn_block">
+                    <div class="preview">
+                        <img class="prw_img" src="./images/mokko.jpg" alt="">
+                    </div>
+                    <div class="control">
+                        <label><input type="checkbox" />Сироп</label>
+                        <label><input type="checkbox" checked />Сахар</label>
+                        <label><input type="checkbox"  />Корица</label>
+                        <label><input type="checkbox"  />Крепость</label>
+                    </div>
+                    <div class="counter">
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input class="inpt_counter" type="text" value="1"/>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input class="inpt_counter" type="text" value="1"/>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input class="inpt_counter" type="text" value="1"/>
+                            <span class="plus">+</span>
+                        </div>  
+                        <div class="number">
+                            <span class="minus">-</span>
+                            <input class="inpt_counter" type="text" value="1"/>
+                            <span class="plus">+</span>
+                        </div>
+                       
+                    </div> 
+                    </div>
+                    <div class="cofe_btn_box">
+                        <button class="cofe_btn">Приготовить кофе</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="progress_body">
+                <div class="progress_box">
+                    <div class="progress-container">
+                        <div class="progress" id="progress"></div>
+                        <div class="circles active">1</div>
+                        <div class="circles">2</div>
+                        <div class="circles">3</div>
+                        <div class="circles">4</div>
+                    </div>
+                    <h3 class="progress_text">Процесс приготовления</h3>
+                </div>
+            </div>                  
+        </header>
+        
+    </body>
+    </html>
