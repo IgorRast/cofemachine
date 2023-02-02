@@ -7,13 +7,23 @@
 img {
     object-fit: cover;
 }
+h3 {
+  font-family: 'Comfortaa';
+}
+
+body {
+  margin: 0;
+}
 
 .container {
     max-width: 1200px;
-    /* padding: 0 15px; */
+     padding-top: 10px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    /* /* display: flex; */
+    justify-content: space-between; 
 }
 
 .header {
@@ -22,105 +32,137 @@ img {
     
 }
 
-.cofe_interface {
-    max-width: 400px;
+.cofe_interface_left {
+    /* max-width: 400px; */
 }
 
-.ingridients_txt {
+.cofe_interface_left_title {
     text-align: center;
+    font-family: 'Comfortaa';
 }
 
 
-.ingridients {
+.cofe_interface_left_ingrd {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
     
     
 }
 
-.ingrd_img {
+.cofe_interface_left_ingrd_img {
     width: 120px;
     height: 50px;
 }
 
-.ingrd_progress {
+.cofe_interface_left_progress {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     
     
 }
 
-#ingr_prog {
+.cofe_interface_left_progress_item {
     width: 120px;
     height: 50px;
     
 }
 
-.ingrd_btns {
+.cofe_interface_left_btnbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     
 }
 
-.ingrd_btn_active {
+.cofe_interface_left_btnbox_btn_active {
     width: 120px;
     height: 30px;
+    /* background-color: rgb(64, 197, 246); */
+    border: none;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black; 
+}
+
+.cofe_interface_left_btnbox_btn {
+    width: 120px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;   
+}
+
+.cofe_interface_left_btnbox_btn:hover,
+.cofe_interface_left_btnbox_btn_active:hover {
+    transition: all 0.25s ease;
     background-color: rgb(64, 197, 246);
-    border: none;
-    cursor: pointer; 
+    color: #fff;
+    border: none; 
 }
 
-.ingrd_btn {
-    width: 120px;
-    height: 30px;
-    border: none;
-    cursor: pointer; 
-}
 
-.btn_box {
+.cofe_interface_left_choosebtn {
     display: flex;
    justify-content: center;
    margin-top: 10px;
+  
+   
+}
+.cofe_interface_left_choosebtn_add_btn:hover {
+  transition: all 0.25s ease;
+  background-color: rgb(64, 197, 246);
+  color: #fff;
+  border: none;
 }
 
-.add_btn {
+.cofe_interface_left_choosebtn_add_btn {
     width: 120px;
     height: 30px;
-    background-color: rgb(64, 197, 246);
+    /* background-color: rgb(64, 197, 246); */
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    border: 1px solid black; 
 }
-.cofe_title {
+.cofe_interface_left_cofe_title {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
     
 }
 
-.cofe_type {
+.cofe_interface_left_cofe_type {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
 }
 
-.cofe_img {
+.cofe_interface_left_cofe_type_img {
     width: 120px;
-    height: 200px;
+    height: 120px;
     margin-bottom: 10px;
 }
 
 .cofe_interface_right {
-    max-width: 600px;
+    /* max-width: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
-.cofe_btn_block {
+.cofe_interface_right_box {
   display: flex;
-    justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
     padding-top: 30px;
 }
 
-.prw_img {
+.cofe_interface_right_box_preview_img {
     width: 250px;
-    height: 400px;
+    height: 250px;
 }
 
 :root {
@@ -130,8 +172,8 @@ img {
     --line-border-empty: lightgrey;
   }
 
-.control {
-    margin: 24px;
+.cofe_interface_right_box_control {
+    /* margin: 24px; */
   }
   
   label {
@@ -187,21 +229,22 @@ img {
     content: url("data:image/svg+xml, <svg viewBox='0 0 16 15' xmlns='http://www.w3.org/2000/svg'><path fill='white' d='M15.25.847a1.51 1.51 0 0 1 .405 2.096L8.106 14.11a1.944 1.944 0 0 1-2.94.329L.6 10.156a1.51 1.51 0 1 1 2.067-2.202l3.645 3.42 6.841-10.122a1.51 1.51 0 0 1 2.098-.405Z'/></svg>");
   }
 
-  .counter {
+  .cofe_interface_right_box_counter {
     display: flex;
     flex-direction: column;
-    margin: 24px;
+    /* margin: 24px; */
   }
 
   span {
     cursor:pointer;
    }
-		.number{
+		.cofe_interface_right_box_counter_number{
 			/* margin:100px; */
       display: flex;
       padding: 8px;
 		}
-		.minus, .plus{
+		.cofe_interface_right_box_counter_number_minus,
+    .cofe_interface_right_box_counter_number_plus {
 			width:24px;
 			height:24px;
 			background:#f2f2f2;
@@ -212,7 +255,7 @@ img {
       vertical-align: middle ;
       text-align: center;
 		}
-		.inpt_counter {
+		.cofe_interface_right_box_counter_number_inpt_counter {
 			height:24px;
       width: 50px;
       text-align: center;
@@ -223,19 +266,27 @@ img {
       vertical-align: middle;
     }
 
-    .cofe_btn_box {
+    .cofe_interface_right_box_btn {
       display: flex;
-      margin-top: 85px;
+      /* margin-top: 85px; */
       justify-content: center;
       
     }
 
-    .cofe_btn {
+    .cofe_interface_right_box_btn_cofe_btn {
       width: 200px;
       height: 30px;
       border: none;
       cursor: pointer;
-      background-color: rgb(64, 197, 246); 
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      border: 1px solid black; 
+      /* background-color: rgb(64, 197, 246);  */
+    }
+    .cofe_interface_right_box_btn_cofe_btn:hover {
+      transition: all 0.25s ease;
+      background-color: rgb(64, 197, 246);
+      color: #fff;
+      border: none;
     }
 
     .progress_body {
@@ -249,11 +300,11 @@ img {
       
     }
     
-    .progress_box {
+    .progress_body_box {
       text-align: center;
     }
     
-    .progress-container {
+    .progress_body_box_progress-container {
       display: flex;
       justify-content: space-between;
       
@@ -263,7 +314,7 @@ img {
       width: 350px;
     }
     
-    .progress-container::before {
+    .progress_body_box_progress-container::before {
       content: ''; /*your have to write this to be able to see it*/
       background-color: rgb(64, 197, 246);
       position: absolute;
@@ -275,7 +326,7 @@ img {
       z-index: -1;
     }
     
-    .progress {
+    .progress_body_box_progress-container_prgrs {
       background-color: blue;
       position: absolute;
       top: 50%;
@@ -287,7 +338,7 @@ img {
       transition: 0.4s ease;
     }
     
-    .circles {
+    .progress_body_box_progress-container_circles  {
       background-color: white;
       color: #999;
       border-radius: 50%;
@@ -300,6 +351,6 @@ img {
       transition: 0.4s ease;
     }
     
-    .circles.active {
+    .progress_body_box_progress-container_circles.active {
       border-color: blue;
     }
